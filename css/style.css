@@ -8,6 +8,7 @@
 
 body {
     width: 100%;
+    max-width: 1280px;
 }
 
 /* Header */
@@ -15,40 +16,41 @@ body {
 header {
     background-color: #C4C4C4;
     width: 100%;
-    height: 160px;
-    justify-content: space-evenly;
+    max-width: 1280px;
+    height: 550px;
+    /* justify-content: space-evenly; */
     border: 3px solid green;
     display: flex;
     align-items: center;
-    
+    flex-direction: column;
 }
 
 .coat-of-arms {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin-left: 20%;
 }
 
 .coat-of-arms > img {
-    width: 75%;
-    height: 70%;
+    width: 100%;
+    height: 90%;
     margin-top: 15%;
-    margin-bottom:15% ;
+    
 }
 
 .nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
     font-size: 20px;
     width: 100%;
+    max-width: 1280px;
     height: 330px;
 }
 
 .nav > a {
-    min-width: 165px;
+    min-width: 200px;
     padding: 15px;
     border: 3px solid green;
     border-radius: 20px;
@@ -56,7 +58,7 @@ header {
     color: black;
     font-family:'Manrope' Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 20px;
     text-decoration: none;
     text-align: center;
     
@@ -71,14 +73,14 @@ header {
 
 main {
     width: 100%;
+    max-width: 1280px;
     flex: auto;
 }
 
 .banner {
     width: 100%;
     height: 550px;
-    display: inline-block;
-    text-align: center;
+    display: none;
 }
 
 .banner > img {
@@ -95,13 +97,10 @@ main {
 }
 
 .curiosity-cards {
-    
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-   
-    
-    
 }
 
 .card {
@@ -114,6 +113,7 @@ main {
     background: white;
     border-radius: 20px;
     border: 3px solid green;
+    margin: 30px;
 }
 
 .card > img {
@@ -124,13 +124,13 @@ main {
 
 .card > h2 {
     width: 70%;
-    font-size: 18px;
+    font-size: 20px;
     font-family:'Menrope', Arial, Helvetica, sans-serif;
     text-align: center;
 }
 
 .card > p {
-    padding: 0px 45px 0px 45px;
+    padding: 0px 45px;
     text-align: justify;
     font-size: 16px;
     font-family:'Menrope', Arial, Helvetica, sans-serif;
@@ -142,9 +142,9 @@ main {
 }
 
 .video-title {
-    padding: 20px 20px;
+    padding: 20px;
     font-family:'Lexend Deca', Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     color: #000000;
 }
@@ -170,22 +170,21 @@ footer {
 
 .contacts {
     display: flex;
-    flex-direction:row ;
+    flex-direction: column;
     gap: 100px;
     align-items: center;
-    justify-content: center;
-    padding: 80px 0px 80px 0px;
+    padding: 80px 0px ;
 }
 
 .contact-card > a > img {
     width: 150px;
     border-radius: 155px;
     border: 5px solid green;
-    align-items: center;
 }
 
 .contact-card > a:hover {
     opacity: 0.5;
+    text-decoration: none;
 }
 
 .contact-card > h2 {
