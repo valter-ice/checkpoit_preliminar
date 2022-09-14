@@ -30,8 +30,9 @@
     /*Main*/
 
     .coat-of-arms {
-        display: block;
-        height: 460px;
+        width: 50%;
+        height: 90%;
+        margin: 5%;
     }
 
     .coat-of-arms > img {
@@ -47,18 +48,20 @@
     }
 
     .curiosity-cards {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
+        /* display:contents; */
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* gap: 50px; */
     }
 
     .card {
         width: 320px;
         height: 550px;
         gap: 15px;
+        flex-direction: column;
+      
     }
 
     .video {
